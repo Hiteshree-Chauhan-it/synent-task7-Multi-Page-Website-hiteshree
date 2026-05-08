@@ -1,0 +1,90 @@
+/* src/styles/Footer.css */
+/* Footer layout and neon styling */
+
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  padding: 3rem 4rem 1.5rem;
+  background: #080812;
+  border-top: 1px solid rgba(0, 212, 255, 0.2);
+  margin-top: 4rem;
+}
+
+/* Brand section */
+.footer-brand {
+  grid-column: 1;
+}
+
+.footer-logo {
+  font-family: var(--font-pixel);
+  font-size: 0.85rem;
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px var(--neon-blue);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.footer-tagline {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Links sections */
+.footer-links h4,
+.footer-topics h4 {
+  font-family: var(--font-pixel);
+  font-size: 0.55rem;
+  color: var(--neon-green);
+  text-shadow: 0 0 8px var(--neon-green);
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.footer-links ul,
+.footer-topics ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--neon-blue);
+}
+
+.footer-topics li {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  grid-column: 1 / -1;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding-top: 1.5rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem 1rem;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-topics {
+    grid-column: 1;
+  }
+}

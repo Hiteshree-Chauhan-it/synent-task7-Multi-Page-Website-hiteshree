@@ -15,7 +15,7 @@ function Navbar() {
       {/* Logo */}
       <Link to="/" className="navbar-logo" onClick={closeMenu}>
         <span className="logo-bracket">&lt;</span>
-        C++Play
+        ClashCode
         <span className="logo-bracket">/&gt;</span>
       </Link>
 
