@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700;800&display=swap');
 
-/* ── CSS Variables (Design Tokens) ── */
+
 :root {
   --bg-dark:      #0d0d1a;
   --bg-card:      #13132b;
@@ -22,14 +22,13 @@
   --transition:   0.25s ease;
 }
 
-/* ── Reset ── */
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* ── Base ── */
 html {
   scroll-behavior: smooth;
 }
@@ -41,18 +40,15 @@ body {
   font-size: 16px;
   line-height: 1.6;
   min-height: 100vh;
-  /* Subtle dot-grid background */
   background-image: radial-gradient(circle, rgba(0,212,255,0.06) 1px, transparent 1px);
   background-size: 30px 30px;
 }
 
-/* ── Utility: Neon text glow ── */
 .neon-text-green  { color: var(--neon-green);  text-shadow: 0 0 10px var(--neon-green); }
 .neon-text-blue   { color: var(--neon-blue);   text-shadow: 0 0 10px var(--neon-blue); }
 .neon-text-pink   { color: var(--neon-pink);   text-shadow: 0 0 10px var(--neon-pink); }
 .neon-text-yellow { color: var(--neon-yellow); text-shadow: 0 0 10px var(--neon-yellow); }
 
-/* ── Utility: Neon button ── */
 .btn-neon {
   display: inline-block;
   padding: 14px 32px;
@@ -100,7 +96,6 @@ body {
   box-shadow: 0 0 30px rgba(0, 212, 255, 0.7);
 }
 
-/* ── Scrollbar ── */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--bg-dark); }
 ::-webkit-scrollbar-thumb { background: var(--neon-blue); border-radius: 4px; }

@@ -1,0 +1,120 @@
+/* src/styles/Navbar.css */
+/* Styles for the sticky top navbar with glow effects */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 70px;
+  background: rgba(13, 13, 26, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+  box-shadow: 0 2px 30px rgba(0, 212, 255, 0.1);
+}
+
+/* ── Logo ── */
+.navbar-logo {
+  font-family: var(--font-pixel);
+  font-size: 0.85rem;
+  color: var(--neon-blue);
+  text-decoration: none;
+  text-shadow: 0 0 14px var(--neon-blue);
+  letter-spacing: 2px;
+  transition: var(--transition);
+}
+
+.navbar-logo:hover {
+  color: var(--neon-green);
+  text-shadow: 0 0 20px var(--neon-green);
+}
+
+.logo-bracket {
+  color: var(--neon-pink);
+  text-shadow: 0 0 10px var(--neon-pink);
+}
+
+/* ── Nav Links ── */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--neon-blue);
+  border-bottom-color: var(--neon-blue);
+  text-shadow: 0 0 8px var(--neon-blue);
+}
+
+/* ── Hamburger (mobile) ── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: var(--neon-blue);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+/* ── Mobile Styles ── */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: rgba(13, 13, 26, 0.98);
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+  }
+
+  .nav-links.nav-open {
+    max-height: 300px;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 16px 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    font-size: 1rem;
+  }
+}
