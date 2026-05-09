@@ -25,7 +25,6 @@
 - [Quiz System](#-quiz-system)
 - [Components](#-components)
 - [Contributing](#-contributing)
-- [License](#-license)
 
 ---
 
