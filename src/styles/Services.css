@@ -1,0 +1,83 @@
+.services-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.accent-blue { color: var(--neon-blue); text-shadow: 0 0 15px var(--neon-blue); }
+
+/* ── Hero ── */
+.services-hero { text-align: center; padding: 1rem 0; }
+
+.services-title {
+  font-family: var(--font-pixel);
+  font-size: clamp(0.8rem, 3vw, 1.3rem);
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.services-sub {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+/* ── Filters ── */
+.level-filters {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 9px 22px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-btn:hover {
+  border-color: var(--neon-blue);
+  color: var(--neon-blue);
+}
+
+.filter-btn.active {
+  border-color: var(--neon-blue);
+  background: rgba(0,212,255,0.12);
+  color: var(--neon-blue);
+  box-shadow: 0 0 14px rgba(0,212,255,0.2);
+}
+
+/* ── Stats ── */
+.stats-bar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding: 0 0.25rem;
+}
+
+.stats-bar strong { color: var(--neon-yellow); }
+
+/* ── Cards Grid ── */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1.75rem;
+}
+
+@media (max-width: 768px) {
+  .cards-grid { grid-template-columns: 1fr; }
+}

@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer-brand">
         <span className="footer-logo">
           <span className="logo-bracket">&lt;</span>
-          C++Play
+          ClashCode
           <span className="logo-bracket">/&gt;</span>
         </span>
         <p className="footer-tagline">Learn C++ the fun way 🎮</p>

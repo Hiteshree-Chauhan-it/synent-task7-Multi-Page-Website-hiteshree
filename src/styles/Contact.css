@@ -1,0 +1,181 @@
+/* src/styles/Contact.css */
+
+.contact-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.accent-pink { color: var(--neon-pink); text-shadow: 0 0 15px var(--neon-pink); }
+
+/* ── Hero ── */
+.contact-hero { text-align: center; }
+
+.contact-badge {
+  display: inline-block;
+  padding: 6px 18px;
+  background: rgba(255,45,120,0.08);
+  border: 1px solid rgba(255,45,120,0.25);
+  border-radius: 99px;
+  color: var(--neon-pink);
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.contact-title {
+  font-family: var(--font-pixel);
+  font-size: clamp(0.85rem, 3vw, 1.4rem);
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.contact-sub {
+  color: var(--text-muted);
+  font-size: 1rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* ── Layout ── */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* ── Form ── */
+.contact-form-wrap {
+  background: var(--bg-card);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field-group label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.field-group input,
+.field-group textarea {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 12px 16px;
+  color: var(--text-main);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  transition: var(--transition);
+  resize: vertical;
+}
+
+.field-group input:focus,
+.field-group textarea:focus {
+  outline: none;
+  border-color: var(--neon-pink);
+  box-shadow: 0 0 16px rgba(255,45,120,0.15);
+}
+
+.field-group input::placeholder,
+.field-group textarea::placeholder {
+  color: #555580;
+}
+
+.form-error {
+  background: rgba(255,45,120,0.1);
+  border: 1px solid rgba(255,45,120,0.3);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: var(--neon-pink);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+/* ── Info Cards ── */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: var(--transition);
+}
+
+.info-card:hover {
+  border-color: rgba(0,212,255,0.25);
+}
+
+.info-card span { font-size: 1.5rem; flex-shrink: 0; }
+
+.info-card h4 {
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.info-card p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* ── Success Screen ── */
+.contact-success {
+  text-align: center;
+  background: var(--bg-card);
+  border: 1px solid rgba(57,255,20,0.25);
+  border-radius: var(--radius);
+  padding: 4rem 2rem;
+  max-width: 500px;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.success-icon { font-size: 3.5rem; }
+
+.contact-success h2 {
+  font-family: var(--font-pixel);
+  font-size: 0.8rem;
+  color: var(--neon-green);
+  text-shadow: 0 0 10px var(--neon-green);
+}
+
+.contact-success p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .contact-layout { grid-template-columns: 1fr; }
+}

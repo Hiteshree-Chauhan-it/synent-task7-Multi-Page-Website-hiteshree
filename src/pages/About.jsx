@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/About.css';
 
 function About() {
-  // Benefits data
   const benefits = [
     { icon: '🧠', title: 'Better Retention', desc: 'Playing games helps your brain remember concepts 3x better than reading!' },
     { icon: '🎯', title: 'Instant Feedback', desc: 'Know right away if your answer is correct — no waiting for a teacher.' },
@@ -19,7 +18,7 @@ function About() {
       <section className="about-hero">
         <div className="about-badge">📖 Our Story</div>
         <h1 className="about-title">
-          Why <span className="accent-blue">C++Play</span> Exists
+          Why <span className="accent-blue">ClashCode</span> Exists
         </h1>
         <p className="about-lead">
           Most students quit C++ because textbooks are boring.
@@ -49,7 +48,7 @@ function About() {
           </div>
           <div className="visual-box active">
             <span>🎮</span>
-            <p>C++Play game</p>
+            <p>ClashCode</p>
             <div className="vs-arrow">→ 🏆 Keep going!</div>
           </div>
         </div>
