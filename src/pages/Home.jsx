@@ -5,7 +5,7 @@ import '../styles/Home.css';
 function Home() {
   // Learning level cards data
   const levels = [
-    {
+    {   
       icon: '🌱',
       title: 'Beginner',
       desc: 'Variables, Data Types, Input/Output — start your journey!',
@@ -90,7 +90,7 @@ function Home() {
 
       {/* ── Features Section ── */}
       <section className="features-section">
-        <h2 className="section-title">Why <span className="accent-yellow">C++Play?</span></h2>
+        <h2 className="section-title">Why <span className="accent-yellow">ClashCode?</span></h2>
         <div className="features-grid">
           {features.map((f, i) => (
             <div key={i} className="feature-item">

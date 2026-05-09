@@ -93,7 +93,7 @@ function Contact() {
                 type="text"
                 id="name"
                 name="name"
-                placeholder="e.g. Alice Smith"
+                placeholder="e.g. Atharva Patel"
                 value={formData.name}
                 onChange={handleChange}
               />
@@ -106,7 +106,7 @@ function Contact() {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="alice@example.com"
+                placeholder="atharvapatel@example.com"
                 value={formData.email}
                 onChange={handleChange}
               />
@@ -137,13 +137,6 @@ function Contact() {
 
         {/* Right: Info cards */}
         <div className="contact-info">
-          <div className="info-card">
-            <span>📍</span>
-            <div>
-              <h4>Find Us</h4>
-              <p>C++Play HQ, Code City, Internet 🌐</p>
-            </div>
-          </div>
           <div className="info-card">
             <span>⏰</span>
             <div>
