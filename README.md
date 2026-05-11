@@ -17,6 +17,7 @@
 
 - [About The Project](#-about-the-project)
 - [Features](#-features)
+- [Screenshots](#-screenshots)
 - [Pages Overview](#-pages-overview)
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
@@ -56,6 +57,79 @@ The platform is designed to make C++ approachable, fun, and addictive — so stu
 | 🔄 **Restart Quiz** | Retry any topic's quiz without page reload |
 | ✉️ **Contact Form** | Validated form with success confirmation screen |
 | 🌙 **Dark Neon Theme** | Retro arcade aesthetic with neon glow effects |
+
+---
+
+## 🖼️ Screenshots
+
+### 🏠 Hero Section
+
+| Desktop | Mobile |
+|---------|--------|
+| ![Hero Desktop](src/images/hero-desktop.png) | ![Hero Mobile](src/images/hero-mobile.png) |
+
+---
+
+### 📖 About Page
+
+| Desktop | Mobile |
+|---------|--------|
+| ![About 1 Desktop](src/images/about1-desktop.png) | ![About 1 Mobile](src/images/about1-mobile.png) |
+| ![About 2 Desktop](src/images/about2-desktop.png) | ![About 2 Mobile](src/images/about2-mobile.png) |
+| ![About 3 Desktop](src/images/about3-desktop.png) | ![About 3 Mobile](src/images/about3-mobile.png) |
+| ![About 4 Desktop](src/images/about4-desktop.png) | *(continued above)* |
+
+---
+
+### 🎮 Services / Game Zone
+
+| Desktop | Mobile |
+|---------|--------|
+| ![Service Desktop](src/images/service-desktop.png) | ![Service Mobile](src/images/service-mobile.png) |
+
+**Quiz in Action:**
+
+| Play — View 1 | Play — View 2 |
+|---------------|---------------|
+| ![Play 1 Service](src/images/play1-service.png) | ![Play 2 Service](src/images/play2-service.png) |
+
+**Mobile Quiz Experience:**
+
+| Mobile — View 1 | Mobile — View 2 |
+|-----------------|-----------------|
+| ![Play 1 Mobile](src/images/play1-mobile.png) | ![Play 2 Mobile](src/images/play2-mobile.png) |
+
+---
+
+### 📄 Why ClashCode
+
+| Desktop | Mobile |
+|---------|--------|
+| ![Why Page Desktop](src/images/whypage-desktop.png) | ![Why Page Mobile](src/images/whypage-mobile.png) |
+
+---
+
+### ✉️ Contact Page
+
+| Desktop | Mobile |
+|---------|--------|
+| ![Contact Desktop](src/images/contact-desktop.png) | ![Contact Mobile](src/images/contact-mobile.png) |
+
+---
+
+### 📱 Mobile Navigation
+
+| Hamburger Menu |
+|----------------|
+| ![Menu Mobile](src/images/menu-mobile.png) |
+
+---
+
+### 🦶 Footer
+
+| Desktop | Mobile |
+|---------|--------|
+| ![Footer Desktop](src/images/footer-desktop.png) | ![Footer Mobile](src/images/footer-mobile.png) |
 
 ---
 
@@ -99,6 +173,8 @@ The platform is designed to make C++ approachable, fun, and addictive — so stu
 
 > No UI framework (like MUI or Bootstrap) is used — all styles are handcrafted for full control and a unique gaming aesthetic.
 
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -128,9 +204,7 @@ npm run dev
 ```
 
 **4. Open in browser**
-```
 http://localhost:5173
-```
 
 ### Build for Production
 
@@ -167,25 +241,23 @@ npm run preview
 ## 🧠 Quiz System
 
 The quiz engine (`Quiz.jsx`) is built entirely with React `useState`. Here's how it works:
-
-```
 User clicks "Start Quiz"
-       ↓
+↓
 Question shown one at a time
-       ↓
+↓
 User selects an answer
-       ↓
+↓
 ✅ Correct → Score +1 + green highlight
 ❌ Wrong   → Red highlight + correct answer revealed
-       ↓
+↓
 "Next Question" button appears
-       ↓
+↓
 Repeat until all questions done
-       ↓
+↓
 Final Score screen with emoji rating + Restart / Next Level buttons
-```
 
 **Score Rating:**
+
 | Score % | Emoji | Message |
 |---|---|---|
 | 80 – 100% | 🏆 | Excellent! You're a C++ star! |
@@ -234,6 +306,8 @@ Contributions are welcome and appreciated! Here's how:
 - 🎵 Add sound effects for correct/wrong answers
 - 🌐 Add multi-language support
 
+---
+
 ## 👨‍💻 Author
 
 Built with ❤️ for students who hate boring C++ textbooks.
@@ -242,6 +316,6 @@ Built with ❤️ for students who hate boring C++ textbooks.
 
 <div align="center">
 
-**[⬆ Back to Top](#-c-play--learn-c-through-play)**
+**[⬆ Back to Top](#-clashcode--learn-c-through-play)**
 
 </div>
